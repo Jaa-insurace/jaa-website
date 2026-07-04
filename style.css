@@ -1,3 +1,9 @@
+/* =========================
+
+   JAA INSURANCE WEBSITE
+
+========================= */
+
 *{
 
     margin:0;
@@ -8,9 +14,15 @@
 
 }
 
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 body{
 
-    font-family:Arial,sans-serif;
+    font-family:'Kanit',sans-serif;
 
     background:#f5f7fb;
 
@@ -20,15 +32,13 @@ body{
 
 }
 
-/* รูปหน้าปก */
+/* ---------- HERO ---------- */
 
 .hero{
 
     position:relative;
 
-    width:100%;
-
-    height:500px;
+    height:100vh;
 
     overflow:hidden;
 
@@ -48,15 +58,9 @@ body{
 
     position:absolute;
 
-    top:0;
+    inset:0;
 
-    left:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:rgba(0,0,0,.35);
+    background:rgba(8,34,73,.45);
 
     display:flex;
 
@@ -68,17 +72,27 @@ body{
 
     text-align:center;
 
-    color:#fff;
+    color:white;
 
-    padding:20px;
+    padding:30px;
 
 }
 
 .overlay h1{
 
-    font-size:58px;
+    font-size:64px;
 
-    margin-bottom:15px;
+    font-weight:700;
+
+}
+
+.overlay h3{
+
+    font-size:34px;
+
+    font-weight:400;
+
+    margin-bottom:20px;
 
 }
 
@@ -86,15 +100,125 @@ body{
 
     font-size:22px;
 
+    margin-bottom:35px;
+
 }
 
-/* กล่องข้อมูล */
+.btn{
 
-.card{
+    display:inline-block;
 
-    max-width:900px;
+    background:#06C755;
 
-    margin:50px auto;
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#04b54a;
+
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.about img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.about h2{
+
+    color:#08346E;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+}
+
+/* ---------- SERVICES ---------- */
+
+.services{
+
+    padding:90px 20px;
+
+    background:white;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#08346E;
+
+    margin-bottom:50px;
+
+}
+
+.service-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.box{
 
     background:#fff;
 
@@ -102,61 +226,33 @@ body{
 
     border-radius:18px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:center;
 
-}
-
-.card h2{
-
-    margin-bottom:20px;
-
-}
-
-.card p{
-
-    margin-bottom:15px;
-
-}
-
-/* ปุ่ม */
-
-.btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:15px 28px;
-
-    background:#06C755;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-    font-weight:bold;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 
     transition:.3s;
 
 }
 
-.btn:hover{
+.box:hover{
 
-    background:#05a847;
-
-    transform:translateY(-2px);
+    transform:translateY(-8px);
 
 }
 
-/* แกลเลอรี */
+.box h3{
+
+    margin-top:15px;
+
+}
+
+/* ---------- GALLERY ---------- */
 
 .gallery{
 
     max-width:1200px;
 
-    margin:60px auto;
+    margin:80px auto;
 
     padding:20px;
 
@@ -174,9 +270,11 @@ body{
 
     text-align:center;
 
-    margin-bottom:15px;
+    color:#08346E;
 
-    font-size:36px;
+    font-size:42px;
+
+    margin-bottom:20px;
 
 }
 
@@ -186,9 +284,11 @@ body{
 
     border-radius:18px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    cursor:pointer;
 
-    transition:.3s;
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 
 }
 
@@ -198,57 +298,93 @@ body{
 
 }
 
-/* Footer */
+/* ---------- CONTACT ---------- */
 
-footer{
+.contact{
+
+    background:#08346E;
+
+    color:white;
 
     text-align:center;
 
-    padding:35px;
-
-    color:#777;
+    padding:80px 20px;
 
 }
 
-/* มือถือ */
+.contact h2{
 
-@media (max-width:768px){
+    font-size:42px;
 
-.hero{
-
-    height:320px;
+    margin-bottom:20px;
 
 }
 
-.overlay h1{
+.contact p{
 
-    font-size:38px;
+    font-size:20px;
 
-}
-
-.overlay p{
-
-    font-size:18px;
+    margin-bottom:12px;
 
 }
 
-.card{
+/* ---------- FOOTER ---------- */
 
-    margin:20px;
+footer{
+
+    background:#05244d;
+
+    color:white;
+
+    text-align:center;
 
     padding:25px;
 
 }
 
-.gallery{
+/* ---------- MOBILE ---------- */
 
-    padding:15px;
+@media(max-width:900px){
+
+.hero{
+
+height:70vh;
 
 }
 
-.gallery h2{
+.overlay h1{
 
-    font-size:28px;
+font-size:42px;
+
+}
+
+.overlay h3{
+
+font-size:24px;
+
+}
+
+.overlay p{
+
+font-size:18px;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+.services h2,
+
+.gallery h2,
+
+.contact h2,
+
+.about h2{
+
+font-size:32px;
 
 }
 
