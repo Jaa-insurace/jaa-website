@@ -145,6 +145,8 @@ footer{
     .card{
 
         margin:20px;
+    }
+}
 .hero{
 
     position:relative;
@@ -200,3 +202,4 @@ footer{
 .overlay p{
 
     font-size:22px;
+}
